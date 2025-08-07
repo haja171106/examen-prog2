@@ -38,6 +38,10 @@ public class Groupe {
         this.publication.add(publication);
     }
 
+    public void supprimerPublication(Publication publication) {
+        this.publication.remove(publication);
+    }
+
     public Publication chercherPublication(String mot) {
         for (Publication publication : this.publication) {
             if(publication.getContenu().toLowerCase().equals(mot)){
